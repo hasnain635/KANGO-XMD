@@ -1,6 +1,6 @@
 //-------------------[ BOT SETTINGS ]------------------// 
 
-// @project_name : Hasnain xmd 
+// @project_name : Hasnain 
 // @author : Hasnain 
 // @telegram : http://t.me/hasnain635
 // @github : hasnain635

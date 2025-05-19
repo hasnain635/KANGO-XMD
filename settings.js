@@ -51,7 +51,7 @@ global.dbToken = process.env.GITHUB_TOKEN || "";
 
 //-----------------[ CONTEXT LINK ]--------------------//
 
-global.plink = process.env.PLINK || "https://youtube.com/@official_manuel"
+global.plink = process.env.PLINK || "https://youtube.com/@hhhbrand635"
 
 //------------------[ WATERMARK ]--------------------//
 

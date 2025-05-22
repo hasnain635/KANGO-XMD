@@ -1,5 +1,4 @@
 //-------------------[ BOT SETTINGS ]------------------// 
-
 // @project_name : Hasnain 
 // @author : Hasnain 
 // @telegram : http://t.me/hasnain635
@@ -15,7 +14,7 @@ if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname+'/.env' })
 
 //--------------------[ SESSION ID ]----------------------//
 
-global.SESSION_ID = process.env.SESSION_ID || 'KANGO~ZyNByaDJ#0sxgtdUAwym6LpL1N7NepGUIeTMmyJ2ibN4uVSS_LOQ' 
+global.SESSION_ID = process.env.SESSION_ID || 'KANGO~8rEHyC7Z#Ioygqcx0UvX5id5vXATo_s4Zm4rMhdKyMq7QicMmPic' 
 //Enter your KANGO-XMD session id here; must start with KANGO~
 
 //--------------------[ BOT NAME ]----------------------//

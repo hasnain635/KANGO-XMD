@@ -1,10 +1,12 @@
 FROM node:lts
 
 # Install dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg imagemagick webp && apt-get clean
-
-# Update npm to specific version
-RUN npm install -g npm@11.4.0
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ffmpeg \
+    imagemagick \
+    webp \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
@@ -12,8 +14,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install && npm cache clean --force
+# Install dependencies with legacy peer deps flag
+RUN npm install --legacy-peer-deps && npm cache clean --force
 
 # Copy application code
 COPY . .

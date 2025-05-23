@@ -1,5 +1,5 @@
 FROM node:lts
-
+RUN npm install -g npm@11.4.0
 # Install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg imagemagick webp && apt-get clean
 
